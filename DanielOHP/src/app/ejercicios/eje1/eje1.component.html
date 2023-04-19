@@ -4,21 +4,21 @@
         <div class="col-8">
             <div class="card text-center">
                 <div class="card-header">
-                  Featured
+                  Aceso al sistema de {{titulo}}
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input [(ngModel)]="correo"type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">Email address</label>
                   </div>
                   <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input [(ngModel)]="contra" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
                   </div>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <button  class="btn btn-primary">Go somewhere</button>
                 </div>
-                <div class="card-footer text-muted">
+                <div (click)="login()" class="card-footer text-muted">
                   2 days ago
                 </div>
               </div>
