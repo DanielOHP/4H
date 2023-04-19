@@ -16,9 +16,9 @@
                     <input [(ngModel)]="contra" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
                   </div>
-                  <button  class="btn btn-primary">Go somewhere</button>
+                  <button (click)="login()" class="btn btn-primary">Go somewhere</button>
                 </div>
-                <div (click)="login()" class="card-footer text-muted">
+                <div class="card-footer text-muted">
                   2 days ago
                 </div>
               </div>
