@@ -31,7 +31,7 @@
             
             ],
             "scripts": [
-              "node_module/bootstrap/disst/js/bootstrap.bundle.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -99,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "90a4e368-bb99-498e-9e0f-8c3a31d1684a"
   }
 }
