@@ -17,7 +17,7 @@ protected usuarios=[{usr:"Daniel",psw:"123",nombre:"Daniel"},
   login(){
     for (let i=0; i<this.usuarios.length; i++) {
       if (this.usuarios[i].usr == this.correo && this.usuarios[i].psw == this.contra) 
-      alert(this.usuarios[i].nombre+" bienvenidos")
+      alert(this.usuarios[i].nombre +" bienvenidos")
       return;
       
     }
