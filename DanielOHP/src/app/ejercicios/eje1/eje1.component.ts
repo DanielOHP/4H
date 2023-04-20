@@ -10,14 +10,19 @@ export class Eje1Component {
   protected titulo: string = 'empresas Dani´s inc';
   protected correo: string = '';
   protected contra: string = '';
-
+protected usuarios=[{usr:"Daniel",psw:"123",nombre:"Daniel"},
+                    {usr:"Acebedo",psw:"123",nombre:"Acebedo"},
+                    {usr:"Yuli",psw:"123",nombre:"Yuli"}
+] ;
   login(){
-    if(this.correo=="Dani" && this.contra=="123"){
-      alert("Bienvenidos a "+ this.titulo);
+    for (let i=0; i<this.usuarios.length; i++) {
+      if (this.usuarios[i].usr == this.correo && this.usuarios[i].psw == this.contra) 
+      alert(this.usuarios[i].nombre+" bienvenidos")
+      return;
       
     }
-    else{
-      alert("Usuario o contraseña incorrectos");
+    {
+      alert("Usuario o contraseña incorrectos")
     }
   }
 }
